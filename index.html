@@ -10,34 +10,39 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=El+Messiri&family=Amatic+SC&family=Cinzel&family=Yatra+One&family=Zen+Loop&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <!-- navbar section  -->
-    <section class="navbar">
+    <section class="navbar h-nav-resp">
         <nav>
-            <div class="imageSec">
+            <div class="imageSec v-class-resp">
                 <img src="icons/logo.jpg" alt="image">
             </div>
-            <ul>
-                <li><a class="underline" href="#">Home</a></li>
-                <li><a class="underline" href="#projects">Projects</a></li>
-                <li><a class="underline" href="#myskills">My Skills</a></li>
-                <li><a class="underline" href="#about">About Me</a></li>
-                <li><a class="underline" href="#contact">Contact Me </a></li>
+            <ul class="ul v-class-resp">
+                <li><a class="underline font" href="#">Home</a></li>
+                <li><a class="underline font" href="#projects">Projects</a></li>
+                <li><a class="underline font" href="#about">About Me</a></li>
+                <li><a class="underline font" href="#contact">Contact Me </a></li>
             </ul>
+            <div class="burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
         </nav>
     </section>
     <!-- Home section  -->
-    <section id="home" class=" home-container  ">
-        <div class=" padding">
+    <section id="home" class=" home-container ">
+        <div class="home-pad">
 
-            <div id="animie1" class=" font-head home-heading">
+            <div class=" heading">
                 <h1>Hi,I am divyanshu soni.</h1>
             </div>
-            <div id="animie2" class="home-para">
+            <div class="home-para">
                 <h5>A self-taught web developer</h5>
             </div>
         </div>
@@ -45,157 +50,222 @@
     <section id="projects" class="projects-container  ">
         <div class="padding">
 
-            <div class=" home-heading">
+            <div class=" heading">
                 <h1>Projects</h1>
             </div>
 
-            <div class="projects-body "> 
-                <div class="card" id="slideshow">
-                    
-                        <div class="card-front">
-                            <img src="background/ss.png" alt="project1">
-                            
-                            <div >
-                                <h6 class="text-center">Textutlis.com</h6>
-                                <p class="text-center container">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                    Sapiente dicta, praesentium aspernatur eum quia ea velit officia </p>
+            <div class="projects-body ">
+                <div class="card" >
+                    <div class="card-front font">
+                        <img src="background/shopee.png" alt="project1">
+
+                        <div>
+                            <h6 class="text-center">Shoppe.com</h6>
+                            <p class="text-center container">An E-commerce website made with python's django
+                                framework.View products,chechckout them and track them with your order id and email
+                                address </p>
+                        </div>
+                    </div>
+                    <div class="card-back">
+                        <div class="container">
+                            <div  style=" margin: 30vh 0px;">
+                                <a href="">
+                                    <h6 class="text-center">View code</h6>
+                                </a>
+                                <a href="" target="_blank">
+                                    <h6 class="text-center">Visit Site</h6>
+                                </a>
                             </div>
                         </div>
-                        <div class="card-back">
-                            <div class="container">
-                                <div class="" style=" margin: 30vh 0px;">
+                    </div>
+                </div>
+                <div class="card" >
+                    <div class="card-front">
+                        <img src="background/texutilitie.png" alt="project1">
 
-                                    <a href=""><h6 class="text-center">View code</h6></a>
-                                </div>
-                            </div>
-                            
+                        <div>
+                            <h6 class="text-center">Textutilitie.com</h6>
+                            <p class="text-center container">Perform diffrent action on your text such as character
+                                count, newline remover, extra-space remover etc. written in python-django.</p>
                         </div>
-                    
-                </div>
-                <!-- <div  class="card">
-                    <img src="background/ss.png" alt="project1">
-                    <div class="">
-
-                        <h6 class="text-center">Shoppe.com</h6>
-                        <p class="text-center container">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Sapiente dicta, praesentium aspernatur eum quia ea velit officia </p>
                     </div>
-                </div>
-                <div class="card">
-                    <img src="background/ss.png" alt="project1">
-                    <div class="">
+                    <div class="card-back">
+                        <div class="container">
+                            <div style=" margin: 30vh 0px;">
+                                <a href="">
+                                    <h6 class="text-center">View code</h6>
+                                </a>
+                                <a href="https://textutilitie.herokuapp.com/" target="_blank">
+                                    <h6 class="text-center">Visit Site</h6>
+                                </a>
+                            </div>
+                        </div>
 
-                        <h6 class="text-center">Text Editor</h6>
-                        <p class="text-center container">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Sapiente dicta, praesentium aspernatur eum quia ea velit officia </p>
                     </div>
-                </div>
-                <div class="card">
-                    <img src="background/ss.png" alt="project1">
-                    <div class="">
 
-                        <h6 class="text-center">foodie.com</h6>
-                        <p class="text-center container">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Sapiente dicta, praesentium aspernatur eum quia ea velit officia </p>
+                </div>
+                <div class="card" >
+                    <div class="card-front">
+                        <img src="background/foodie.png" alt="project1">
+
+                        <div>
+                            <h6 class="text-center">Foodie.com</h6>
+                            <p class="text-center container"> A simple food delivery web-site using Html,Css and
+                                Javascript. </p>
+                        </div>
                     </div>
-                </div> -->
+                    <div class="card-back">
+                        <div class="container">
+                            <div style=" margin: 30vh 0px;">
+
+                                <a href="">
+                                    <h6 class="text-center">View code</h6>
+                                </a>
+                                <a href="" target="_blank">
+                                    <h6 class="text-center">Visit Site</h6>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="card" >
+                    <div class="card-front">
+                        <img src="background/text-editor.png" alt="project1">
+
+                        <div>
+                            <h6 class="text-center">Text Editor</h6>
+                            <p class="text-center container">Text-editor application made with python's tkinter module.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-back">
+                        <div class="container">
+                            <div style=" margin: 30vh 0px;">
+                                <a href="">
+                                    <h6 class="text-center">View code</h6>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
             </div>
         </div>
 
     </section>
-    <section id="myskills" class="myskills-container ">
-        <div class="padding">
-            <div class="home-heading">
-                <h1>Myskills</h1>
-            </div>
 
-            <div class="myskills-body">
-                <img class="bounce" src="icons/html.png" alt="">
-                <img class="bounce" src="icons/css.jpg" alt="">
-                <img class="bounce" src="icons/js.png" alt="">
-                <img class="bounce" src="icons/python.jpg" alt="">
-                <img class="bounce" src="icons/django.png" alt="">
-            </div>
-        </div>
-    </section>
     <section id="about" class="about-container ">
         <div class="padding">
-            <div class=" home-heading">
+            <div class=" heading">
                 <h1>About Me</h1>
             </div>
 
             <div class="about-body">
+                <div class="about">
+                    <p style="margin: 0;">Graduated in commerce and want to make carrer in IT field. Programming is my interest and i want to deep dive into it. Came to know about programming in my finals and then i started learning it on my own . </p>
+                </div>
+                <div class="skills">
+                    <div class="skills-head">
+                        <p>My Skills :</p>
+                    </div>
 
+                    <div class="myskills-body">
+                        <img src="https://img.icons8.com/ios/48/000000/html-5--v1.png"/>
+                        <img src="https://img.icons8.com/ios/50/000000/css.png"/>
+                        <img src="https://img.icons8.com/wired/50/000000/javascript-logo.png"/>
+                        <img src="https://img.icons8.com/ios/50/000000/python--v2.png"/>
+                        <img src="https://img.icons8.com/ios/50/000000/django.png"/>
+                    </div>
+                </div>
             </div>
+    
         </div>
     </section>
     <section id="contact" class="contact-container ">
-        <div style="padding-top: 150px;">
-            <div id="contact-head" class=" home-heading" style="margin-bottom: 50px;">
+        <div class="contact-pad">
+            <div id="contact-head" class=" heading mb">
                 <h1>Contact Me</h1>
             </div>
 
             <div id="contact-body" class="contact-body">
-                <div class="sample">
-                    <img class="bounce" src="icons/gmail.png" alt="">
-                    <span id="tooltip1" data-bs-toggle="tooltip" title="click to copy" onclick="CTC('amans197555@gmail.com',this)" class="copy" >amans197555@gmail.com</span>
+                <div class="email">
+                    <img class="bounce" src="https://img.icons8.com/bubbles/50/000000/gmail-new.png"/>
+                    <span id="tooltip1" data-bs-toggle="tooltip" title="click to copy"
+                        onclick="CTC('amans197555@gmail.com',this)" class="copy ">amans197555@gmail.com</span>
                 </div>
-                <div class="sample">
-                    <img class="bounce" src="icons/phone.jpg" alt="">
-                    <span id="tooltip2" data-bs-toggle="tooltip" title="click to copy"  onclick="CTC('+917372958746',this)" class="copy" >+917372958746</span>
+                <div class="email">
+                    <img class="bounce" src="https://img.icons8.com/bubbles/50/000000/missed-call.png"/>
+                    <span id="tooltip2" data-bs-toggle="tooltip" title="click to copy"
+                        onclick="CTC('+917372958746',this)" class="copy">+917372958746</span>
                 </div>
             </div>
-            <div class="contact-body" style="margin-top: 60px;">
+            <div class="contact-body mt ">
                 <div class="social-media text-center">
-                    <img class="bounce" src="icons/insta.jpg" alt="instagram">
-                    <a href="https://www.instagram.com/aman_soni21">
-                    <p>Instagram</p> 
+                    <img class="bounce" src="https://img.icons8.com/color/48/000000/instagram.png"/>
+                    <a  href="https://www.instagram.com/aman_soni21" target="_blank">
+                        <p>Instagram</p>
                     </a>
                 </div>
                 <div class="social-media text-center">
-                    <img class="bounce" src="icons/github.png" alt="github">
-                    <a href="https://github.com/coderaman21">
-                       <p>Github</p> 
+                    <img class="bounce" src="https://img.icons8.com/color/48/000000/github.png"/>
+                    <a  href="https://github.com/coderaman21" target="_blank">
+                        <p>Github</p>
                     </a>
                 </div>
                 <div class="social-media text-center">
-                    <img class="bounce" src="icons/twitter.png" alt="twitter">
-                    <a href="https://twitter.com">
-                    <p>Twitter</p> 
+                    <img class="bounce" src="https://img.icons8.com/fluent/48/000000/twitter.png"/>
+                    <a href="https://twitter.com" target="_blank">
+                        <p>Twitter</p>
                     </a>
                 </div>
-               
+
             </div>
         </div>
     </section>
-    <footer class="footer">
-        <p style="margin: 0;">Created by divyanshu soni aka aman </p>
+    <footer  >
+        <p style="margin: 0;">  All rights reserved to Divyanshu Soni </p>
     </footer>
 
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous">
-</script>
-    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
 
 
 <script>
+
+    let burger = document.querySelector('.burger');
+    let navbar = document.querySelector('.navbar');
+    let imageSec = document.querySelector('.imageSec');
+    let ul = document.querySelector('.ul');
+
+    burger.addEventListener('click', () => {
+        navbar.classList.toggle('h-nav-resp');
+        imageSec.classList.toggle('v-class-resp');
+        ul.classList.toggle('v-class-resp');
+
+    })
+
+
     // copy to clipborad 
-    function CTC(TextToCopy,btn) {
+    function CTC(TextToCopy, btn) {
         // fetch id of element
         var id = btn.id;
-       
+
         var TempText = document.createElement("input");
         TempText.value = TextToCopy;
         document.body.appendChild(TempText);
         TempText.select();
-        
+
         document.execCommand("copy");
         document.body.removeChild(TempText);
 
-        document.getElementById(id).setAttribute('title','copied!')
-       
+        document.getElementById(id).setAttribute('title', 'copied!')
     }
 
 </script>
