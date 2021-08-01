@@ -2,16 +2,18 @@
             margin: 0;
             padding: 0;  
         }
-
+        .background{
+            background: url(background/bg1.jpg) no-repeat center center fixed;
+            background-size: cover;
+        }
         html {
             scroll-behavior: smooth;
         }
 
         .heading {
             font-family:'Alfa Slab One', cursive;
-            color: #ffe1e1;
+            color: #ffffff;
             text-align: center;
-            transition: all.5s ease-in;
             text-shadow: #000000 3px 7px 4px;
         }
         
@@ -35,15 +37,13 @@
         
         /*............... navbar section................. */
         .navbar {
-            background: url(background/bg1.jpg) no-repeat center center fixed;
-            background-size: cover;
-            /* background-color:rgb(173 162 162 / 50%);      transparent navbar */
-            
+            /* background-color:rgb(173 162 162 / 50%);      transparent navbar */     
             display: inherit;
             position: sticky;
             top: 0;
             z-index: 1;
             height: 120px;
+            box-shadow: #000000 0px 0px 10px;
         }
 
         .imageSec {
@@ -74,9 +74,9 @@
             text-decoration: none;
             font-size: 1rem;
             padding: 10px;
-            transition: all .5s;
+            transition: all .4s;
         }
-    ul li a:hover{color:#f0feff ;}
+        ul li a:hover{color:#f0feff ;}
        
             /* underline effect  */
             .underline {
@@ -90,8 +90,8 @@
                 margin-top: 3px;
                 right: 0;
                 background: rgb(255, 145, 82);
-                transition: width .4s ease;
-                -webkit-transition: width .4s ease;
+                transition: width .5s ease;
+                -webkit-transition: width .5s ease;
               }
               .underline:hover:after{
                 width: 100%;
@@ -108,7 +108,7 @@
                 top: 6px;
               }
               .line{
-                background-color: #ffe0e0;
+                background-color: #ffffff;
                 box-shadow:rgb(0,0,0)5px 8px 25px ;
                 height: 3px;
                 width: 30px;
@@ -118,23 +118,15 @@
 
         /* home section  */
         .home-container {
-            background: url(background/bg1.jpg) no-repeat center center fixed;
-            background-size: cover;
             height: 100vh;
         }
 
         .home-para {
-            text-align: center;
-            color: #ffe1e1;
-            font-family:  'Alfa Slab One', cursive;
-            font: small-caps;
-            text-shadow: #000000 3px 7px 4px;
+            font: small-caps;  
         }
 
         /*.............. projects section.............  */
         .projects-container {
-            background: url(background/bg1.jpg) no-repeat center center fixed;
-            background-size: cover;
             height: 124vh;  
         }
 
@@ -180,31 +172,30 @@
             }
             .card-front {
                 background-color:rgb(195 192 192 / 22%);
-                /* color: black; */
+                font-family: 'PT Serif', serif;
             }
             
             .card-back {
-                background-color: #000000;
+                background-color:black ;        /* #e64646 */
                 color: white;
                 transform: rotateY(180deg);
             }
-
+            /* .card-back a{color: white;} */
         /*.............. about section..............  */
         .about-container {
-            background: url(background/bg1.jpg) no-repeat center center fixed;       
-            background-size: cover;
             height: 100vh;
         }
         .about-body{
-            font-family: 'El Messiri', sans-serif;
-            color: #f0feff;
+            font-family: 'PT Serif', serif;
+            color: #dadada;
             text-shadow: #000000 3px 7px 4px;
             background-color:#2e4d4f;
             margin: 45px auto;
             width: 80vw;
             border-radius: 10px;
-            box-shadow:  rgb(0,0,0)5px 8px 25px;
+            box-shadow:  rgb(0,0,0)0px 0px 20px;
         }
+        /* .about-body:hover{ box-shadow: rgb(0,0,0)0px 0px 5px,rgb(0,0,0)0px 0px 10px,rgb(0,0,0)0px 0px 15px;} */
         .about{    
             margin: 0 20px;
             padding-top: 10px;
@@ -219,13 +210,14 @@
             box-shadow: 2px 2px 3px #ffffff;
         }
         .myskills-body img:hover{
-            box-shadow: -3px 0px 3px white,3px 0px 3px #ffffff ;
+            box-shadow: -3px 0px 7px white,3px 0px 7px #ffffff ,white 0px 0px 7px;
         }
         .skills{
             margin-left: 20px;
-        
         }
-        .skills-head{
+        .skills a{ color:#dadada ; text-decoration: none;}
+        .skills p{font-size: 22px; padding-bottom: 10px;}
+        .skills-head {
             padding-top: 32px;
             font-size: 22px;
         }
@@ -234,8 +226,6 @@
         }
         /*................. contact section.................  */
         .contact-container {
-            background: url(background/bg1.jpg) no-repeat center center fixed;          
-            background-size: cover;
             height: 80vh;
         }
         .contact-pad{
@@ -275,6 +265,8 @@
             font-family: 'Zen Loop', cursive;
             text-decoration: none;
             text-shadow: #000000 3px 7px 4px;
+            transition: all .5s ease-in-out;
+
         }
         .social-media a:hover{
             color: rgb(255, 255, 255);
@@ -286,6 +278,7 @@
             font-family: 'Zen Loop', cursive;
             cursor: pointer;
             text-shadow: #000000 3px 7px 4px;
+            transition: all .5s ease-in-out;
         }
         .copy:hover{
             color: rgb(255, 255, 255);
@@ -294,7 +287,6 @@
 
         /*............... footer................ */
         footer {
-            /* font-family: 'Amatic SC', cursive; */
             font-family: 'Yatra One', cursive;
             text-align: center;
             background-color: rgb(48 51 51);
@@ -372,6 +364,7 @@
                 width: 2rem;
                 margin: 9px 4px;
             }
+            .skills p{font-size:17px;}
             /* contact me section  */
                 .contact-container{
                     height: 80vh;
@@ -389,9 +382,10 @@
                 .mt{
                     margin-top: 30px;
                 }
+                .copy{font-size: 1.2rem;}
                 .contact-body img {width: 2rem;}
                 .social-media{margin: 0 25px;}
-                .social-media a{font-size: 17px;}
+                .social-media a{font-size: 1.2rem;}
                 .email{
                     width: 60%; 
                     margin: 15px;
@@ -403,77 +397,4 @@
                 }
         }
 
-        /* animation */
-            
-
-
-        /* #animie1 {
-            position: absolute;
-            left: 36%; 
-            overflow: inherit;
-            animation: home-head 4s 1ms;
-            -webkit-animation: home-head 4s 1ms;
-        }
-        #animie2{
-            position: absolute;
-            top: 52%;
-            left: 41%;
-            overflow: inherit;
-            animation: home-para 4s 1ms;
-            -webkit-animation: home-para 4s 1ms;
-        }
-        @-webkit-keyframes home-head {
-            0%{
-                
-               left: 0%;
-            }
         
-           
-            100%{
-                left: 36%;
-                
-            }
-
-        }
-        @keyframes home-head {
-            0%{
-                left: 0%;
-            }
-        
-            100%{
-                left: 36%;
-                
-            }
-
-        }
-        @-webkit-keyframes home-para {
-            0%{
-                width: 100%;
-               left: 100%;
-               right: 0%;
-            }
-        
-           
-            100%{ 
-                left: 41%;
-                right: 59%;
-                width: 100%;
-            }
-
-        }
-        @keyframes home-para {
-            0%{
-                width: 100%;
-                left: 100%;
-                right: 0%;
-             }
-         
-            
- 100%{ 
- eft: 41%;
-                            right: 59%;
-                            width: 100%;*
-                        }
-
-        } */
-   
