@@ -265,12 +265,11 @@
             font-family: 'Zen Loop', cursive;
             text-decoration: none;
             text-shadow: #000000 3px 7px 4px;
-            transition: all .5s ease-in-out;
+            transition: all .3s ease-in-out;
 
         }
         .social-media a:hover{
-            color: rgb(255, 255, 255);
-            text-decoration: underline #ff3d00;;
+            color: rgba(255, 187, 27, 0.856);
         }
         .copy{
             color: white;
@@ -278,11 +277,10 @@
             font-family: 'Zen Loop', cursive;
             cursor: pointer;
             text-shadow: #000000 3px 7px 4px;
-            transition: all .5s ease-in-out;
+            transition: all .3s ease-in-out;
         }
         .copy:hover{
-            color: rgb(255, 255, 255);
-            text-decoration: underline #ff3d00;;
+            color: rgba(255, 187, 27, 0.856);
         }
 
         /*............... footer................ */
@@ -316,12 +314,12 @@
                 display: none;
             }
             .imageSec{width: 12%;}
-            .imageSec img{width: 2.5rem;}
+            .imageSec img{width: 3rem;}
 
             ol,ul{padding-left: 0;}
             
             ul li a{
-                font-size: .8rem;
+                font-size: 1rem;
                 padding: 4px;
             }
             .burger{
@@ -329,11 +327,11 @@
             }
             /* home section  */
             .heading h1{
-                font-size: 20px;
+                font-size: 1.5rem;
             }
             .home-pad{padding: 35vh 0;}
             .home-para h5{
-                font-size: 14px;
+                font-size: 1rem;
             }
             /* projects section  */
             .projects-container{
@@ -382,8 +380,8 @@
                 .mt{
                     margin-top: 30px;
                 }
-                .copy{font-size: 1.2rem;}
-                .contact-body img {width: 2rem;}
+                .copy{font-size: 1.5rem;}
+                .contact-body img {width: 3rem;}
                 .social-media{margin: 0 25px;}
                 .social-media a{font-size: 1.2rem;}
                 .email{
