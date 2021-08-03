@@ -257,12 +257,12 @@
             border-radius: 50%;
         }
         .social-media{
-            margin: 0px 90px;
+            margin: 0px 60px;
         }
         .social-media a{
             color: white;
-            font-size: 22px;
-            font-family: 'Zen Loop', cursive;
+            font-size: 16px;
+            /* font-family: 'Zen Loop', cursive; */
             text-decoration: none;
             text-shadow: #000000 3px 7px 4px;
             transition: all .3s ease-in-out;
@@ -273,8 +273,8 @@
         }
         .copy{
             color: white;
-            font-size: 22px;
-            font-family: 'Zen Loop', cursive;
+            font-size: 16px;
+            /* font-family: 'Zen Loop', cursive; */
             cursor: pointer;
             text-shadow: #000000 3px 7px 4px;
             transition: all .3s ease-in-out;
@@ -380,10 +380,10 @@
                 .mt{
                     margin-top: 30px;
                 }
-                .copy{font-size: 1.5rem;}
+                .copy{font-size: .9rem;}
                 .contact-body img {width: 3rem;}
-                .social-media{margin: 0 25px;}
-                .social-media a{font-size: 1.2rem;}
+                .social-media{margin: 0 10px;}
+                .social-media a{font-size: .9rem;}
                 .email{
                     width: 60%; 
                     margin: 15px;
