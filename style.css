@@ -201,6 +201,7 @@
             padding-top: 10px;
             font-size: 22px
         }
+        .about-body p a:hover{text-decoration: underline;} 
        
         .myskills-body img {
             width: 3rem;
@@ -292,7 +293,11 @@
             text-shadow: #000000 3px 7px 4px;    
         }
 
-        /*............. media queries...............  */
+
+
+
+/*.................................. media queries.........................................  */
+
         @media only screen and (max-width:1150px) {
             .padding{padding: 18vh 0;}
             /* navbar section  */
