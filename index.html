@@ -17,10 +17,10 @@
 
 <body>
     <!-- navbar section  -->
-    <section id="nav1" class="navbar background h-nav-resp">
+    <header id="nav1" class="navbar background h-nav-resp ">
         <nav>
             <div class="imageSec v-class-resp">
-                <img src="Icons/logo.jpg" alt="image">
+                <img src="Icons/logo.jpg" alt="logo">
             </div>
             <ul class="ul v-class-resp">
                 <li><a class="underline font" href="#">Home</a></li>
@@ -34,7 +34,7 @@
                 <div class="line"></div>
             </div>
         </nav>
-    </section>
+    </header>
     <!-- Home section  -->
     <section id="home" class=" home-container background ">
         <div class="home-pad">
@@ -47,6 +47,7 @@
             </div>
         </div>
     </section>
+    <!-- projects section  -->    
     <section id="projects" class="projects-container background ">
         <div class="padding">
 
@@ -79,7 +80,7 @@
                 </div>
                 <div class="card" >
                     <div class="card-front">
-                        <img src="background/texutilitie.png" alt="project1">
+                        <img src="background/texutilitie.png" alt="project2">
 
                         <div>
                             <h6 class="text-center">Textutilitie.com</h6>
@@ -102,7 +103,7 @@
                 </div>
                 <div class="card" >
                     <div class="card-front">
-                        <img src="background/edues.png" alt="project1">
+                        <img src="background/edues.png" alt="project3">
 
                         <div>
                             <h6 class="text-center">Edues.in</h6>
@@ -124,7 +125,7 @@
 
                 <div class="card" >
                     <div class="card-front">
-                        <img src="background/text-editor.png" alt="project1">
+                        <img src="background/text-editor.png" alt="project4">
 
                         <div>
                             <h6 class="text-center">Text Editor</h6>
@@ -149,7 +150,7 @@
         </div>
 
     </section>
-
+    <!-- about section  -->
     <section id="about" class="about-container background ">
         <div class="padding">
             <div class=" heading">
@@ -166,12 +167,12 @@
                     </div>
 
                     <div class="myskills-body">
-                        <img src="Icons/html-5--v1.png"/>
-                        <img src="Icons/css.png"/>
-                        <img src="Icons/javascript-logo.png"/>
-                        <img src="Icons/python--v2.png"/>
-                        <img src="Icons/django.png"/>
-                        <img src="Icons/c.png"/>
+                        <img src="Icons/html-5--v1.png" alt="html image"/>
+                        <img src="Icons/css.png" alt="css image"/>
+                        <img src="Icons/javascript-logo.png" alt="javascript image"/>
+                        <img src="Icons/python--v2.png" alt="python image"/>
+                        <img src="Icons/django.png" alt="django image"/>
+                        <img src="Icons/c.png" alt="c image"/>
                     </div>
                     <p><a href="https://drive.google.com/file/d/1YbQlc7ltbLx8LVOqLYovZ6TU8hpf94Jc/view?usp=sharing" target="_blank">click to see my resume </a></p> 
                 </div>
@@ -179,6 +180,7 @@
     
         </div>
     </section>
+    <!-- contact section  -->
     <section id="contact" class="contact-container background ">
         <div class="contact-pad">
             <div id="contact-head" class=" heading mb">
@@ -187,37 +189,37 @@
 
             <div id="contact-body" class="contact-body">
                 <div class="email">
-                    <img class="bounce" src="Icons/gmail-new.png"/>
+                    <img class="bounce" src="Icons/gmail-new.png" alt='gmail image'/>
                     <span id="tooltip1" data-bs-toggle="tooltip" title="click to copy"
                         onclick="CTC('amans197555@gmail.com',this)" class="copy ">amans197555@gmail.com</span>
                 </div>
                 <div class="email">
-                    <img class="bounce" src="Icons/call.png"/>
+                    <img class="bounce" src="Icons/call.png" alt='phone image'/>
                     <span id="tooltip2" data-bs-toggle="tooltip" title="click to copy"
                         onclick="CTC('+917372958746',this)" class="copy">+917372958746</span>
                 </div>
             </div>
             <div class="contact-body mt ">
                 <div class="social-media text-center">
-                    <img class="bounce" src="Icons/instagram.png"/>
+                    <img class="bounce" src="Icons/instagram.png" alt='instagram image'/>
                     <a  href="https://www.instagram.com/aman_soni21" target="_blank">
                         <p>Instagram</p>
                     </a>
                 </div>
                 <div class="social-media text-center">
-                    <img class="bounce"  src="Icons/linkedin.png"/>
+                    <img class="bounce"  src="Icons/linkedin.png" alt='linkedin image'/>
                     <a  href="https://www.linkedin.com/in/divyanshusoni/" target="_blank">
                         <p>Linkedin</p>
                     </a>
                 </div>
                 <div class="social-media text-center">
-                    <img class="bounce" src="Icons/github.png"/>
+                    <img class="bounce" src="Icons/github.png" alt='github image'/>
                     <a  href="https://github.com/coderaman21" target="_blank">
                         <p>Github</p>
                     </a>
                 </div>
                 <div class="social-media text-center">
-                    <img class="bounce" src="Icons/twitter.png"/>
+                    <img class="bounce" src="Icons/twitter.png" alt='twitter image'/>
                     <a href="https://twitter.com/amans197555" target="_blank">
                         <p>Twitter</p>
                     </a>
@@ -226,6 +228,7 @@
             </div>
         </div>
     </section>
+    <!-- footer section  -->
     <footer  >
         <p style="margin: 0;">&copy;  All rights reserved to Divyanshu Soni  </p>
     </footer>
@@ -249,6 +252,23 @@
         ul.classList.toggle('v-class-resp');
 
     })
+
+    // navbar scroll effect
+    
+    if (window.matchMedia(' (min-width:1150px)').matches){
+        window.addEventListener('scroll',()=>{
+                if(window.scrollY>150){
+                    imageSec.style.display = 'none';
+                    navbar.style.justifyContent = 'flex-end';
+                }
+                else{
+                    imageSec.style.display = 'block';
+                    navbar.style.justifyContent = 'center';
+                }
+            })
+         
+    }
+    
 
 
     // copy to clipborad 
