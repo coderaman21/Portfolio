@@ -78,6 +78,29 @@
                         </div>
                     </div>
                 </div>
+                
+                <div class="card" >
+                    <div class="card-front">
+                        <img src="background/blogs.png" alt="project4">
+
+                        <div>
+                            <h6 class="text-center">Techies Blogs</h6>
+                            <p class="text-center container">Django blog application with CRUD opertions using class based viwes. sign in or signup ,view profile , create post ,view post and many more..  </p>
+                        </div>
+                    </div>
+                    <div class="card-back">
+                        <div class="container">
+                            <div style=" margin: 30vh 0px;">
+                                <a target="_blank" href="https://techies-blogs.herokuapp.com/">
+                                    <h6 class="text-center">Vist site</h6>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
                 <div class="card" >
                     <div class="card-front">
                         <img src="background/texutilitie.png" alt="project2">
@@ -123,28 +146,6 @@
 
                 </div>
 
-                <div class="card" >
-                    <div class="card-front">
-                        <img src="background/text-editor.png" alt="project4">
-
-                        <div>
-                            <h6 class="text-center">Text Editor</h6>
-                            <p class="text-center container">Text-editor application made with python's tkinter module.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="card-back">
-                        <div class="container">
-                            <div style=" margin: 30vh 0px;">
-                                <a target="_blank" href="https://drive.google.com/file/d/1L08xgCV0hyXqBrzJh_sLj1RfhUSgcP7X/view?usp=sharing">
-                                    <h6 class="text-center">View code</h6>
-                                </a>
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
 
             </div>
         </div>
@@ -253,7 +254,7 @@
 
     })
 
-    // navbar scroll effect
+    // navbar scroll effect (not for mobile screen)
     
     if (window.matchMedia(' (min-width:1150px)').matches){
         window.addEventListener('scroll',()=>{
@@ -266,8 +267,7 @@
                     navbar.style.justifyContent = 'center';
                 }
             })
-         
-    }
+        }
     
 
 
